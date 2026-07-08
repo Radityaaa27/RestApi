@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-canvas text-primary font-sans;
+  }
+
+  h1 {
+    @apply text-h1 text-primary;
+  }
+
+  h2 {
+    @apply text-h2 text-primary;
+  }
+
+  body,
+  p,
+  label,
+  span {
+    @apply text-body text-secondary;
+  }
+
+  /* Consistent visible focus ring for accessibility, tuned to the teal accent */
+  :focus-visible {
+    outline: 2px solid #0f766e;
+    outline-offset: 2px;
+  }
+}
